@@ -126,7 +126,7 @@ postTweetsSection.forEach((element) => {
   });
 });
 
-window.addEventListener("DOMContentLoaded", affichage);
+// window.addEventListener("DOMContentLoaded", affichage);
 
 // leTweet.classList.add("tweet");
 // tweetDiv.innerHTML = `
