@@ -1,36 +1,36 @@
 const input_tweets = document.getElementById("tweets");
 const btn_post = document.querySelector(".btn_post");
 
-btn_post.addEventListener("click", async (e) => {
-  e.preventDefault();
+// btn_post.addEventListener("click", async (e) => {
+//   e.preventDefault();
 
-  const tweetContent = input_tweets.value;
+//   const tweetContent = input_tweets.value;
 
-  if (!tweetContent.trim()) {
-    alert(" !");
-    return;
-  }
+//   if (!tweetContent.trim()) {
+//     alert(" !");
+//     return;
+//   }
 
-  const user = {
-    id: Date.now(), // ou un ID généré autrement
-    userId: 1, // Simulé (à changer selon ta logique)
-    content: tweetContent,
-  };
+//   const user = {
+//     id: Date.now(), // ou un ID généré autrement
+//     userId: 1, // Simulé (à changer selon ta logique)
+//     content: tweetContent,
+//   };
 
-  // On stocke dans le localStorage
-  localStorage.setItem("content", tweetContent);
+//   // On stocke dans le localStorage
+//   localStorage.setItem("content", tweetContent);
 
-  //  On envoie au backend JSON Server
-  await fetch("http://localhost:3000/tweets", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(user),
-  });
+//   //  On envoie au backend JSON Server
+//   await fetch("http://localhost:3000/tweets", {
+//     method: "POST",
+//     headers: {
+//       "content-type": "application/json",
+//     },
+//     body: JSON.stringify(user),
+//   });
 
-  //  On l’affiche
-});
+//   //  On l’affiche
+// });
 
 // const media = JSON.parse(localStorage.getItem("media") || "null");
 
