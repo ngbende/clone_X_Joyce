@@ -73,6 +73,7 @@ function afficherUnTweet(tweet) {
     section.prepend(tweetDiv.cloneNode(true));
   });
   // postTweetsSection.textConte(tweetDiv);
+  affichage();
 }
 
 function affichage() {
@@ -125,7 +126,7 @@ postTweetsSection.forEach((element) => {
   });
 });
 
-window.addEventListener("DOMContentLoaded", affichage);
+// window.addEventListener("DOMContentLoaded", affichage);
 
 // leTweet.classList.add("tweet");
 // tweetDiv.innerHTML = `
