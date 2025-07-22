@@ -51,11 +51,12 @@ btn_post.addEventListener("click", async (e) => {
             url: imageDataUrl,
           },
         ]
-      : [], // ✅ utilise directement l'objet récupéré
+      : [], // utilise directement l'objet récupéré
   };
 
   if (!tweetContent) {
     alert("Tweet vide !");
+    return;
   }
 
   //  Masquer l’image preview et reset les données
