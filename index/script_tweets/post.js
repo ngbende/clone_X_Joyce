@@ -58,6 +58,12 @@ btn_post.addEventListener("click", async (e) => {
     alert("Tweet vide !");
   }
 
+  //  Masquer l’image preview et reset les données
+  imagePreview.src = "";
+  imagePreview.style.display = "none";
+  img_section.style.display = "none";
+  imageDataUrl = "";
+
   //Stocker en localStorage
   const anciensTweets = JSON.parse(localStorage.getItem("tweets") || "[]");
   anciensTweets.push(user);
