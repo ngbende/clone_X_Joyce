@@ -24,7 +24,7 @@ imageInput.addEventListener("change", () => {
       imagePreview.style.display = "block";
       imagePreview.src = imageDataUrl;
     };
-
+    img_section.style.display = "none";
     reader.readAsDataURL(file);
   }
 });
