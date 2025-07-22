@@ -54,7 +54,7 @@ btn_post.addEventListener("click", async (e) => {
       : [], // utilise directement l'objet récupéré
   };
 
-  if (!tweetContent) {
+  if (!tweetContent && !imageDataUrl) {
     alert("Tweet vide !");
     return;
   }
