@@ -73,7 +73,7 @@ function afficherUnTweet(tweet) {
     section.prepend(tweetDiv.cloneNode(true));
   });
   // postTweetsSection.textConte(tweetDiv);
-  affichage();
+  // affichage();
 }
 
 function affichage() {
