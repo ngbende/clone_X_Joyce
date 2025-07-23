@@ -15,7 +15,7 @@ async function loadUserProfile(userId) {
   if (user.coverPicture) {
     spaceCouverture.innerHTML = `<img src="${user.coverPicture}" alt="image couverture" class="absolute w-full h-55 object-cover rounded-lg" />`;
   } else {
-    spaceCouverture.innerHTML = `<img src="https://img.icons8.com/ios-filled/50/apple-camera.png" alt="image couverture" class="w-full h-40 object-cover rounded-lg" />`;
+    spaceCouverture.innerHTML = `<img src="https://img.icons8.com/ios-filled/50/apple-camera.png" alt="image couverture" class="  w-1/2 h-40 object-cover rounded-lg sm:w-full h-40 object-cover rounded-lg" />`;
   }
 }
 

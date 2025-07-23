@@ -9,7 +9,7 @@ triggerZones.forEach((trigger, index) => {
   trigger.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
-    popups[index]?.classList.remove("hidden");
+    popups[index].classList.remove("hidden");
   });
 });
 
@@ -18,7 +18,7 @@ btn_deconexs.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
-    popup2s[index]?.classList.remove("hidden");
+    popup2s[index].classList.remove("hidden");
   });
 });
 
